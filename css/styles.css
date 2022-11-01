@@ -46,7 +46,15 @@ button {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
+
+.link {
+  text-decoration: none;
+  color: currentColor;
+}
+
 .list {
   list-style: none;
   margin: 0;
@@ -159,18 +167,27 @@ img {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  cursor: pointer;
 }
 
 .header-email-tel:hover {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 /*hero*/
 
 .hero {
-  background-color: var(--secondary-backgraund-color);
   padding-top: 200px;
   padding-bottom: 200px;
+  max-width: 1600px;
+  margin: 0 auto;
+  background-color: #c4c4c4;
+  background-image: url(../images/hero-bg-img.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  /*background: rgba(47, 48, 58, 0.4);*/
 }
 
 .hero-title {
@@ -324,14 +341,9 @@ img {
   width: 44px;
   height: 44px;
 
-  /*color: #afb1b8*/;
+  /*color: #afb1b8*/
   background-color: #fff;
   border-radius: 50%;
-}
-
-.socials-link:hover,
-.socials-link:focus {
-  background-color: var(--accent-color);
 }
 
 .socials-icon:hover,
@@ -340,6 +352,11 @@ img {
 }
 .socials-icon {
   fill: #afb1b8;
+}
+
+.socials-link:hover,
+.socials-link:focus {
+  background-color: var(--accent-color);
 }
 
 /*regular clients*/
@@ -409,6 +426,8 @@ img {
 .footer {
   background-color: var(--secondary-backgraund-color);
   padding: 60px 0;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 .footer-logo {
@@ -471,8 +490,8 @@ img {
 }
 
 .footer-join-us {
-  color: #FFFFFF;
-font-weight: 700;
+  color: #ffffff;
+  font-weight: 700;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
@@ -516,8 +535,6 @@ font-weight: 700;
   fill: #ffffff;
 }
 
-
-
 /*portfolio*/
 
 .portfolio-filter {
@@ -554,6 +571,18 @@ font-weight: 700;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+}
+
+.portfolio-item-link {
+  cursor: pointer;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+}
+
+.portfolio-item-link:hover,
+.portfolio-item-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-item-description {
