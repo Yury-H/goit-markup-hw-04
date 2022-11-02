@@ -185,8 +185,10 @@ img {
   max-width: 1600px;
   margin: 0 auto;
   background-color: #c4c4c4;
-  background-image: url(../images/hero-bg-img.jpg),
-    linear-gradient(180deg, rgba(47, 48, 58, 0) 0%, rgba(47, 48, 58, 0.4) 100%);
+  background-image: linear-gradient(
+    90deg,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)), url(../images/hero-bg-img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -586,7 +588,7 @@ img {
 
 .portfolio-item-link:hover,
 .portfolio-item-link:focus {
-  border: 1px solid #eeeeee;
+  display: block;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
